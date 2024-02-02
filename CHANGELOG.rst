@@ -2,6 +2,51 @@
 CHANGELOG
 =========
 
+1.34.34
+=======
+
+* api-change:``dynamodb``: [``botocore``] Any number of users can execute up to 50 concurrent restores (any type of restore) in a given account.
+* api-change:``sagemaker``: [``botocore``] Amazon SageMaker Canvas adds GenerativeAiSettings support for CanvasAppSettings.
+* api-change:``endpoint-rules``: [``botocore``] Update endpoint-rules client to latest version
+
+
+1.34.33
+=======
+
+* api-change:``cognito-idp``: [``botocore``] Added CreateIdentityProvider and UpdateIdentityProvider details for new SAML IdP features
+* api-change:``ivs``: [``botocore``] This release introduces a new resource Playback Restriction Policy which can be used to geo-restrict or domain-restrict channel stream playback when associated with a channel.  New APIs to support this resource were introduced in the form of Create/Delete/Get/Update/List.
+* api-change:``managedblockchain-query``: [``botocore``] This release adds support for transactions that have not reached finality. It also removes support for the status property from the response of the GetTransaction operation. You can use the confirmationStatus and executionStatus properties to determine the status of the transaction.
+* api-change:``mediaconvert``: [``botocore``] This release includes support for broadcast-mixed audio description tracks.
+* api-change:``neptune-graph``: [``botocore``] Adding new APIs in SDK for Amazon Neptune Analytics. These APIs include operations to execute, cancel, list queries and get the graph summary.
+
+
+1.34.32
+=======
+
+* api-change:``cloudformation``: [``botocore``] CloudFormation IaC generator allows you to scan existing resources in your account and select resources to generate a template for a new or existing CloudFormation stack.
+* api-change:``elbv2``: [``botocore``] Update elbv2 client to latest version
+* api-change:``glue``: [``botocore``] Update page size limits for GetJobRuns and GetTriggers APIs.
+* api-change:``ssm``: [``botocore``] This release adds an optional Duration parameter to StateManager Associations. This allows customers to specify how long an apply-only-on-cron association execution should run. Once the specified Duration is out all the ongoing cancellable commands or automations are cancelled.
+
+
+1.34.31
+=======
+
+* api-change:``datazone``: [``botocore``] Add new skipDeletionCheck to DeleteDomain. Add new skipDeletionCheck to DeleteProject which also automatically deletes dependent objects
+* api-change:``route53``: [``botocore``] Update the SDKs for text changes in the APIs.
+
+
+1.34.30
+=======
+
+* api-change:``autoscaling``: [``botocore``] EC2 Auto Scaling customers who use attribute based instance-type selection can now intuitively define their Spot instances price protection limit as a percentage of the lowest priced On-Demand instance type.
+* api-change:``comprehend``: [``botocore``] Comprehend PII analysis now supports Spanish input documents.
+* api-change:``ec2``: [``botocore``] EC2 Fleet customers who use attribute based instance-type selection can now intuitively define their Spot instances price protection limit as a percentage of the lowest priced On-Demand instance type.
+* api-change:``mwaa``: [``botocore``] This release adds MAINTENANCE environment status for Amazon MWAA environments.
+* api-change:``rds``: [``botocore``] Introduced support for the InsufficientDBInstanceCapacityFault error in the RDS RestoreDBClusterFromSnapshot and RestoreDBClusterToPointInTime API methods. This provides enhanced error handling, ensuring a more robust experience.
+* api-change:``snowball``: [``botocore``] Modified description of createaddress to include direction to add path when providing a JSON file.
+
+
 1.34.29
 =======
 
